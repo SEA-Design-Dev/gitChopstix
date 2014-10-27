@@ -1,0 +1,13 @@
+I added a link to my GitHub account on my Canvas profile. The rest I had already done.
+
+I completed the Console Foundations and Git courses on Treehouse. Here is a link to my profile with the badges:
+
+http://teamtreehouse.com/sheyna
+
+I would like to see a tutorial that discussed the differences in installing software on Mac OSX as opposed to unix/linux. I have Homebrew installed but know little about using it. I did find this on the Treehouse forum which was helpful:
+
+https://teamtreehouse.com/forum/homebrew
+
+But more information would be helpful.
+
+In the terminal tutorial I also enjoyed learning how to change my PS1. I never liked mine.
