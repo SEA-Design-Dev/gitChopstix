@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # UXE - Git Chopstix
 
 For this assignment, practice practice practice. Fork, clone, add folder, add content, merge, push and pull request.
@@ -11,20 +10,10 @@ Submitting assignments for this course will require leveraging some of the more 
 
 ## How to submit an assignment
 
-=======
-#Unicorn Class - Learning better CSS
-For this section of the course, students will be required to create a single page Web Site that incorporates best practices for HTML and now apply CSS styling. 
-
-##Submiting assignments
-Submitting assignments for this course will require leveraging some of the more advanced features of Github. These features will not only improve your knowledge of Git and Github, but also provide practice exercises for working on a distributed project with a large team. 
-
-##How to submit an assignment
->>>>>>> upstream/master
 In order to submit assignments, please use the following steps
 
 1. [Fork this repo][1] so that you have a working version
 1. [Clone the forked repo][2] to your local computer
-<<<<<<< HEAD
 1. Create a folder named with your name, example `dale-sande`
 1. Once completed with your assignment, commit code to the master branch and push to Github `git push origin master`
 1. From __your fork__ of the project, initiate a pull request to the parent repo
@@ -40,21 +29,6 @@ To manage an upstream pull, I suggest updating your `.bash_profile` and your `.g
 
 ### .bash_profile
 
-=======
-1. Create a folder named with the project name and your name, example `basic-css-layout-dale-sande`
-1. Once completed with your assignment, commit code to the master branch and push to Github `git push origin master`
-1. From __your fork__ of the project, initiate a pull request to the parent repo
-
-##Assignment review
-When a pull request is initiated, I will be notified of the update and comment on the submitted assignment via Github tools. 
-
-##Keeping your local repo up to date
-Your local repo will be an independent version of the original repo from the moment you fork the repo. In order to keep your local repo up to date with the original repo, you need to do what is called an [upstream pull][3].
-
-To manage an upstream pull, I suggest updating your `.bash_profile` and your `.gitconfig` file with easy to remember aliases. 
-
-###.bash_profile
->>>>>>> upstream/master
 In your `.bash_profile` add the following alias
 
 ```
@@ -67,15 +41,9 @@ From the command line you simply need to refer to the alias and add the path to 
 $ upstream https://github.com/blackfalcon/unicorn-class-css-section.git
 ```
 
-<<<<<<< HEAD
 Once the upstream repo is configured for your local repo, this never needs to be reset again, unless you delete your local repo.
 
 ### .gitconfig
-=======
-Once the upstream repo is configured for your local repo, this never needs to be reset again, unless you delete your local repo. 
-
-###.gitconfig
->>>>>>> upstream/master
 In your `.gitconfig` add the following alias
 
 ```
@@ -85,11 +53,7 @@ pu = !"git fetch origin -v; git fetch upstream -v; git merge upstream/master"
 From the command line, within the project repo, enter the following command to pull latest code from the upstream master.
 
 ```
-<<<<<<< HEAD
 git pu
-=======
-git pu 
->>>>>>> upstream/master
 ```
 
 
@@ -97,8 +61,4 @@ git pu
 
 [1]:https://help.github.com/articles/fork-a-repo
 [2]:https://help.github.com/articles/fork-a-repo#step-2-clone-your-fork
-<<<<<<< HEAD
 [3]:https://help.github.com/articles/syncing-a-fork
-=======
-[3]:https://help.github.com/articles/syncing-a-fork
->>>>>>> upstream/master
