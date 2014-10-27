@@ -1,0 +1,180 @@
+html,
+body {
+  height: 100%;
+}
+.maincontent {
+  background: url(skyline.png) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+body {
+  /*background:url('http://www.cssdeck.com/uploads/media/items/0/0Rs78ic.gif');*/
+  /*color:#888;*/
+  padding: 0;
+  margin: 0;
+  font: 72.5%'Helvetica Neue', "Helvetica", "Arial", sans-serif;
+  overflow-x: hidden;
+}
+h1 {
+  color: white;
+  font-family: "Verdana";
+  font-weight: 100;
+  -webkit-font-smoothing: antialiased;
+  -webkit-justify-content: center;
+  display: -webkit-flex;
+  font-size: 5.5em;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-bottom: 0px;
+  text-align: center;
+}
+ul {
+  display: -webkit-flex;
+  -webkit-flex-flow: row;
+  -webkit-justify-content: center;
+  -webkit-align-items: center;
+}
+li {
+  color: white;
+  display: inline;
+  font-weight: 100;
+  -webkit-font-smoothing: antialiased;
+  text-transform: uppercase;
+  font-family: "verdana";
+  padding: 0.8em;
+  border: 1px solid white;
+  margin-left: 1em;
+}
+.buttons {
+  margin-right: 2.3em;
+}
+h3 {
+  font-size: 1.6em;
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 1.4em;
+  font-family: "Lato";
+  font-weight: 100;
+  -webkit-font-smoothing: antialiased;
+  color: silver;
+}
+.maincontent {
+  width: 100%;
+  height: 500px;
+  padding-top: 200px;
+}
+.supported {
+  width: 100%;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+a:hover {
+  color: silver;
+}
+h5 {
+  font-family: "Verdana";
+  -webkit-font-smoothing: antialiased;
+  font-size: 1.4em;
+  color: black;
+  margin-top: 0px;
+}
+p {
+  width: 90%;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Verdana";
+  padding: 5px;
+}
+.blocks {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  margin-right: 2%;
+  font-family: "Verdana";
+}
+.about,
+.news {
+  margin-left: 2%;
+  font-family: "Verdana";
+  margin-top: 0;
+}
+.about {
+  -webkit-flex: 1.5 0 0;
+  flex: 1.5 0 0;
+}
+.news {
+  -webkit-flex: 1 0 0;
+  flex: 1 0 0;
+}
+.ne {
+  display: inline-block;
+  color: black;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+.about,
+.news,
+{
+  text-align: center;
+}
+.about,
+.news {
+  width: 70%;
+  height: static;
+}
+.blocks {
+  width: 90%;
+  background: #FFF;
+  margin: 20px auto;
+}
+.blocks {
+  position: relative;
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+.blocks:before,
+.blocks:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+  -moz-box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+  top: 10px;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  -moz-border-radius: 100px / 10px;
+  border-radius: 100px / 10px;
+}
+.blocks:after {
+  right: 10px;
+  left: auto;
+  -webkit-transform: skew(8deg) rotate(3deg);
+  -moz-transform: skew(8deg) rotate(3deg);
+  -ms-transform: skew(8deg) rotate(3deg);
+  -o-transform: skew(8deg) rotate(3deg);
+  transform: skew(8deg) rotate(3deg);
+}
+.ne,
+p {
+  font-size: 1.2em;
+  color: grey;
+}
+.news {
+  margin-top: 75.5px;
+}
+@media screen and (min-width: 0px) and (max-width: 640px) {
+  nav {
+    -webkit-flex-flow: column;
+  }
+}
