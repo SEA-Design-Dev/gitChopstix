@@ -1,0 +1,146 @@
+*** Console Commands ***
+
+ls              list contents of directory
+ls -l           long form version, more details
+ls -a           list all, including hidden files
+ls /<dir>       list contents of that directory
+
+clear           clear screen
+
+pwd             print working directory
+
+cd <dir>        change directory,
+                cd ~ will go to home dir
+                cd .. will go one directory higher
+
+mv <from> <to>  move or rename, files or directories
+cp <from> <to>  like mv, but leaves original in place
+                -r to do so recursively, for directories
+rm              removes a file or directory, no undo
+                -r to do so recursively, for directories
+mkdir           make directory
+                -p to create nested directories
+
+!!              previous command
+
+
+*** Looking at file contents ***
+
+less <filename>     runs “less” to show file contents, arrow to scroll, spacebar by page
+                    q to quit. “pager”
+
+cat <filename>      for concatenating but can use to view contents
+
+nano <filename>     to view and edit. ctrl key menu at bottom
+
+
+*** Users ***
+
+whoami                  which user you're logged in as
+sudo adduser <name>     add user, in special mode
+su <name>               switch user
+exit                    will go back to original user
+
+
+*** Permissions ***
+
+chmod <who> <what>      change permissions
+                        chmod o+w = give Others the write permission
+
+chown <name>            needs sudo, chgs ownwer
+
+sudo                    switch to root user, super user
+
+
+*** Processes ***
+
+top                     shows current running processes, interactive
+                        ? will show help, like how to sort
+                        q to quit
+
+ps                      show processes,                         return list
+                        aux view all processes
+ps aux | grep "top"     will show all processes that match the grep for top
+
+jobs                    list jobs for current session, id's
+<job> &                 run a process and immediately put it in background
+fg                      bring most recently paused job back to foreground
+
+kill <id>               kill process with that id#, clean up and exit
+kill -KILL <id>         end immediately, can leave system in strange states
+kill -STOP <id>         sends stop signal (pause)
+
+
+
+*** environment variables
+
+env                     shows environment variables
+echo <stuff>            echo back stuff
+echo $<enviro>          will echo back value of environment variable
+                        echo $HOME
+$                       specifies that you want to expand the env variable out
+                        do not use $ when setting value
+$PS1                    prompt
+export                  send variable to other processes
+$PATH                   where it looks to run command, directory by directory
+
+
+
+find . -name "<name>"   starting in current directory, search down for file with name
+                        returns path to file
+
+grep                    search inside a file for a pattern (regexp)
+grep "is" hello.txt     search for "is" in file hello.txt
+grep -n "is" hello.txt  provides line numbers for search results
+grep -i                 case insensitive
+grep -v                 lines that don't match
+man grep                manual for all options for grep
+
+
+
+*** installing ***
+build and install from source vs. package manager
+
+sudo apt-get update           updates package database
+sudo apt-get install <name>   installs package
+curl -O <file URL>            copy file from online location
+tar -xvf <file location>      decompress tar at this location
+
+1)  ./configure               run the configure program right here
+2)  make                      build program
+3)  sudo make install         install
+
+
+apt-cache search <x>          search package database for search term
+sudo apt-get upgrade          check for updates
+sudo apt-get remove <name>    uninstall package
+
+*** Other Notes ***
+
+user | group | other: order of permissions
+~ home directory
+tab completion: shows autocomplete options for valid cd
+bash: shell
+read, write, execute:    permissions
+octal 0 thru 7 --  r=4, w=2, x=1
+
+a job is a process that you own that you started from your console window
+can pause/stop a job, ctrl-Z
+
+signal: message sent to a process by an OS
+signal: TERM : terminate, clean up and exit  ctrl-C
+
+standard in and standard out
+piping output from one program as input to another with |
+< redirection, route file into std input program
+> output
+>> redirect output to append to end of file
+2> redirect std error output to file
+
+find / -name "sudoers" 2> /dev/null   dump errors into junk file
+
+ps aux | grep bash | sort     find all the processes called bash and sort them
+
+
+
+

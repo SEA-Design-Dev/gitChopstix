@@ -1,0 +1,96 @@
+Git Basics
+
+*** Ideas ***
+
+version control, source control, revision control
+
+repository
+commit changes to repository
+
+why git?
+designed by linux creator to manage development of that OS
+
+distributed version control system
+access to "plumbing"
+github community
+
+.git folder is where the history is stored
+
+master branch is trunk
+
+remote repositories
+clone
+push and pull
+
+
+*** Commands ***
+
+git --version               find out what version is installed
+
+git init <name>             create repository called <name>
+git init                    creates a new repository based on the current directory
+
+rm -r .git                  delete .git folder, which also removes repository
+
+git config --global user.name "<name>"        to set info re: user, for contact with team
+git config --global user.email "<address>"
+
+git add <filename>          add file to repo, adds to staging area
+git commit                  commits file to repo, launches text editor to write comment
+git commit -a -m "<text>"   commits all changed files with <text> as comment
+
+git status                  status of files that are in progress
+git log                     shows history of commits in repo
+
+git checkout <id>           checkout commit from history, identified for 1st six chars of ID
+
+git diff <id1> <id2>        compare two commits
+
+git branch <bname>          create a branch called bname
+git checkout <bname>        switch to that branch, checkout its head
+git checkout -b <bname>     create branch called bname and check it out
+git branch                  lists all branches in project and shows which is current
+git branch -D <bname>       deletes the branch called bname.
+
+git merge <bname>           merge bname into branch you are currently on,
+                            will work automatically if there are no conflicts
+                        if detects conflict, will fail and notify
+                        proceed by opening file in conflict, inspect markers, choose change, save. run git add and git commit to add changes and resolve conflict.
+
+git clone <loc>              make a local copy of the repo at loc
+
+
+git remote                  shows the remote repository for the one you're currently in
+                            if it is a clone, the copied repo will be called origin
+
+git remote add <name> <loc> add a remote called name found at location loc
+
+git push                    send all changes from current repo to remote
+git push origin <bname>     add new branch called bname to origin
+
+git pull origin <bname>     pull from origin to bname branch
+                            can be used to resolve and merge locally first, just like merge
+
+                            assumes origin remote for push and pull
+
+
+*** GitHub ***
+pull request - ask owner to pull in your changes
+fork - make your own copy
+
+
+*** gitflow for branch management ***
+
+git flow feature start <name>   create a feature branch called <name>
+git flow hotfix start <name>    create a hotfix branch called <name>
+git flow hotfix finish <name>   close out the fix
+
+
+
+
+
+
+
+
+
+
