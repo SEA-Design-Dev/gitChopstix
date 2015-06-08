@@ -1,0 +1,19 @@
+GIT COMMAND NOTES
+git status : gives status of current branch
+git branch : without branch name this shows the avail branches and indicates
+which you're on. With the branch name, this creates that branch.
+git checkout <branch name> switches to the branch of <branch name>
+
+git init <directory> creates a repositry of name <directory>
+
+git pull <remote repository> : fetches and merges remote repo
+git push <remote repo> <branch> : pushes local <branch> to <remote repo>
+
+git merge <branch>: Merges specified branch into the current branch 
+git add <file> or <directory>: stage changes in <file> or <directory> for commit
+git commit: commits files and directories stages with git add. 
+Message dialog will appear. -m "message" will  add text to each committed 
+file in lieu of dialog. -a commits all changes for files that have been 
+added with git add
+
+
