@@ -1,0 +1,21 @@
+UNIX commands
+ls : lists all non-hidden files and folders. Also simply "l"
+cd : changes directory
+~/ represents home directory
+cwd : current working directory
+mv : move file
+cp: copy file
+mkdir: make directory
+rmdir: remove a directory. may need "sudo rmdir -r" depending on permissions
+rm: remove a file
+chmod: change permission. Users/Groups/Other Read/Write/eXecute 4/2/1
+chown: change ownership
+chgrp: change group
+
+touch - create file; or updates existing file to current timesatmp
+
+
+less - file viewer; pseudo editor.
+more - file viewer, stops at page/screen breaks
+cat - dumps files content to screen
+nano - editor
